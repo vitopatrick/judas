@@ -10,7 +10,7 @@ const Sidebar = () => {
     clsx({
       ["font-db text-orange-100 font-main flex gap-1 items-center my-6 pl-4"]:
         true,
-      ["bg-bg w-full py-2 pl-2 rounded-lg "]: pathname === url,
+      ["bg-bg w-full py-2 pl-2 rounded-lg my-6"]: pathname === url,
     });
 
   const textClasses = (url: any) =>
@@ -26,31 +26,32 @@ const Sidebar = () => {
         {/* first links flex container */}
         <div>
           {/* logo flex container */}
-          <div className="mb-8 font-bold text-button uppercase font-main text-xl">
-            <img src="/logo.webp" alt="logo" className="w-[50%] p-2" />
+          <div className="space-y-10">
+            {FIRST_LINKS.map((link) => (
+              <Link
+                href={link.path}
+                key={link.key}
+                className={boxClasses(link.path)}
+              >
+                {/* flex item */}
+                <div className={textClasses(link.path)}>{link.icon}</div>
+                <div className={textClasses(link.path)}>{link.label}</div>
+              </Link>
+            ))}
           </div>
-          {FIRST_LINKS.map((link) => (
-            <Link
-              href={link.path}
-              key={link.key}
-              className={boxClasses(link.path)}
-            >
-              {/* flex item */}
-              <div className={textClasses(link.path)}>{link.icon}</div>
-              <div className={textClasses(link.path)}>{link.label}</div>
-            </Link>
-          ))}
-          {SECOND_LINKS.map((link) => (
-            <Link
-              href={link.path}
-              key={link.key}
-              className={boxClasses(link.path)}
-            >
-              {/* flex item */}
-              <div className={textClasses(link.path)}>{link.icon}</div>
-              <div className={textClasses(link.path)}>{link.label}</div>
-            </Link>
-          ))}
+          <div className="space-y-10">
+            {SECOND_LINKS.map((link) => (
+              <Link
+                href={link.path}
+                key={link.key}
+                className={boxClasses(link.path)}
+              >
+                {/* flex item */}
+                <div className={textClasses(link.path)}>{link.icon}</div>
+                <div className={textClasses(link.path)}>{link.label}</div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,40 @@
+import Link from "next/link";
+import React from "react";
+
+type Props = {};
+
+const NavBar = (props: Props) => {
+  return (
+    <nav>
+      {/* container and flex wrapper */}
+      <div className="w-[90%] mx-auto p-3 md:w-[85%] flex justify-between items-center">
+        {/* Logo */}
+        <div>
+          <Link
+            href="/"
+            className="block font-body text-3xl font-bold tracking-widest"
+          >
+            Roket<span className="text-sky-500">Mine</span>
+          </Link>
+        </div>
+        {/* Register and login button */}
+        <div className="font-body space-x-4">
+          <Link
+            href="/auth/sign-in"
+            className="uppercase border font-semibold text-sky-700 border-sky-700 rounded px-6 py-2"
+          >
+            Login
+          </Link>
+          <Link
+            href="/auth/sign-up"
+            className="bg-sky-700 rounded text-white font-semibold px-6 py-2 uppercase"
+          >
+            Register
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;

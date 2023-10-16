@@ -11,6 +11,7 @@ module.exports = {
         lp: ["Poppins", "sans-serif"],
         db: ["Jost", "sans-serif"],
         num: ["Nunito Sans", "sans-serif"],
+        body: ["Nunito", "sans-serif"],
       },
       colors: {
         bg: "#030712",
