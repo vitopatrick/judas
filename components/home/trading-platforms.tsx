@@ -51,7 +51,7 @@ const TradingPlatforms = ({
           {/* write up  */}
           <div className={changeArrangement(order)}>
             <h2 className="font-bold capitalize text-2xl">{header}</h2>
-            <p className="font-light leading-loose">{body}</p>
+            <p className="font-light leading-loose font-db">{body}</p>
             {/* Register button */}
             <Link href="/auth/sign-in" className={changeColor(order)}>
               {order == 1 ? "Register with us" : "Get started today"}

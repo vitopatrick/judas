@@ -3,9 +3,11 @@ import React from "react";
 
 type Props = {};
 
+const links = ["about", "contact"];
+
 const NavBar = (props: Props) => {
   return (
-    <nav>
+    <nav className="sticky top-0 bg-white py-3">
       {/* container and flex wrapper */}
       <div className="w-[90%] mx-auto p-3 md:w-[85%] flex justify-between items-center">
         {/* Logo */}
@@ -14,8 +16,20 @@ const NavBar = (props: Props) => {
             href="/"
             className="block font-body text-3xl font-bold tracking-widest"
           >
-            Roket<span className="text-sky-500">Mine</span>
+            Capital<span className="text-sky-500">Mine</span>
           </Link>
+        </div>
+        {/* Links */}
+        <div className="space-x-5 capitalize font-num">
+          {links.map((link) => (
+            <Link
+              href={`/${link}`}
+              key={link}
+              className="hover:text-sky-700 capitalize"
+            >
+              {link}
+            </Link>
+          ))}
         </div>
         {/* Register and login button */}
         <div className="font-body space-x-4">

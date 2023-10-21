@@ -14,7 +14,7 @@ export const addresses = [
     name: "Ethereum",
     address: "0x8ce24ab7409df8e92b8d201b44b0aff463826050",
     network: "Eth",
-    img: "/eth.jpeg",
+    // img: "/eth.jpeg",
   },
 
   // {
@@ -31,7 +31,7 @@ export const addresses = [
     name: "Tether ",
     address: "0x8ce24ab7409df8e92b8d201b44b0aff463826050",
     network: "usdt",
-    img: "/tether.jpeg",
+    // img: "/tether.jpeg",
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ export const addresses = [
     name: "Bitcoin",
     address: "16rn6CbRVGVpiDxuAB8eQuHsvDGBan1udd",
     network: "BTC",
-    img: "/bitcoin.jpeg",
+    // img: "/bitcoin.jpeg",
   },
   // {
   //   id: 6,

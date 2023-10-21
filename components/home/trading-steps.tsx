@@ -48,7 +48,7 @@ const TradingSteps = (props: Props) => {
               <div className="my-3">{step.icon}</div>
               <div className="space-y-3">
                 <h4 className="font-bold text-lg">{step.header}</h4>
-                <p className="font-light leading-loose">{step.body}</p>
+                <p className="font-light font-db leading-loose">{step.body}</p>
               </div>
             </div>
           ))}

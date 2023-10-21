@@ -6,7 +6,7 @@ import AboutHero from "../../components/about/AboutHero";
 const AboutUs = () => {
   return (
     <Layout>
-      <AboutHero />
+      {/* <AboutHero /> */}
       <Values />
     </Layout>
   );

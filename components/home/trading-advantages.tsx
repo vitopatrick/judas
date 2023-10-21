@@ -63,7 +63,7 @@ const TradingAdvantages = (props: Props) => {
               {/* write up */}
               <div className="space-y-2">
                 <h4 className="font-bold">{advantages.title}</h4>
-                <p className="leading-loose font-light text-sm">
+                <p className="leading-loose font-db font-light text-sm">
                   {advantages.body}
                 </p>
               </div>
