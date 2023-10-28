@@ -1,4 +1,5 @@
 import Hero from "../components/home/Hero";
+import AboutUs from "../components/home/about-us";
 import Footer from "../components/home/footer";
 import NavBar from "../components/home/nav-bar";
 import TradingAdvantages from "../components/home/trading-advantages";
@@ -18,7 +19,7 @@ export default function Home() {
         body="Multi-asset terminal Allpips combines cutting-edge technologies and a classic design taken to a whole new level. No more unnecessary software and updates-get access to all global financial markets via a web terminal in a familiar web browser."
         heading="Trading Platforms"
       />
-
+      <AboutUs />
       <TradingPlatforms
         order={2}
         ctaImage="/metatrader4-devices.png"

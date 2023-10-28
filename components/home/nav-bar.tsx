@@ -9,23 +9,23 @@ const NavBar = (props: Props) => {
   return (
     <nav className="sticky top-0 bg-white py-3">
       {/* container and flex wrapper */}
-      <div className="w-[90%] mx-auto p-3 md:w-[85%] flex justify-between items-center">
+      <div className="w-[90%] mx-auto md:p-3 p-1  md:w-[85%] flex justify-between gap-[2rem] items-center">
         {/* Logo */}
         <div>
           <Link
             href="/"
-            className="block font-body text-3xl font-bold tracking-widest"
+            className="block font-body text-3xl font-bold md:tracking-widest"
           >
             Capital<span className="text-sky-500">Mine</span>
           </Link>
         </div>
         {/* Links */}
-        <div className="space-x-5 capitalize font-num">
+        <div className="space-x-5 hidden md:block">
           {links.map((link) => (
             <Link
               href={`/${link}`}
               key={link}
-              className="hover:text-sky-700 capitalize"
+              className="hover:text-sky-700 uppercase font-db"
             >
               {link}
             </Link>
