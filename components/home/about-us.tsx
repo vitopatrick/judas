@@ -7,7 +7,7 @@ const AboutUs = (props: Props) => {
   return (
     <div>
       {/* container */}
-      <div className="w-[90%] md:w-[90%] mx-auto my-[2rem] p-4">
+      <div className="w-full md:w-[90%] mx-auto my-[2rem] p-4">
         {/* Header */}
         <h3 className="font-num text-2xl text-center font-bold">About us</h3>
         {/* flex container */}

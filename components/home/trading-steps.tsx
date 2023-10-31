@@ -34,9 +34,9 @@ const steps = [
 
 const TradingSteps = (props: Props) => {
   return (
-    <section className="bg-sky-50/50 p-4 font-body">
+    <section className="bg-sky-50/50 font-body">
       {/* container & flex Wrapper*/}
-      <div className="w-[90%] md:w-[80%] mx-auto p-3">
+      <div className="w-full md:w-[80%] mx-auto p-3">
         {/* header */}
         <h4 className="font-bold text-3xl  capitalize">
           Start Trading in <span className="text-blue-600">4 steps</span>

@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
   return (
     <section className="p-5">
       {/* container */}
-      <div className="w-[90%] md:w-[80%] mx-auto p-5 md:grid grid-cols-2 gap-4 place-items-center">
+      <div className="w-full md:w-[80%] mx-auto p-5 md:grid grid-cols-2  md:gap-4 place-items-center">
         {/* write up */}
         <div className="font-body space-y-3">
           <h1 className="text-3xl md:text-5xl font-bold">

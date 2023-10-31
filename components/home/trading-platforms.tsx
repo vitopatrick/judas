@@ -42,7 +42,7 @@ const TradingPlatforms = ({
   return (
     <section className="font-body my-12">
       {/* container */}
-      <div className="w-[90%] md:w-[80%] mx-auto p-4">
+      <div className="w-full md:w-[80%] mx-auto p-4">
         <div className="text-center p-3 my-3">
           <h4 className="font-bold text-3xl text-blue-600">{heading}</h4>
         </div>

@@ -11,7 +11,7 @@ const TradingComponents = (props: Props) => {
         <TickerTap />
       </div>
       {/* Company Info Card*/}
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 gap-4 w-full place-items-center">
         <CompanyInfoCard symbol={"BINANCE:ADAUSDT"} />
         <CompanyInfoCard symbol={"BINANCE:LTCUSDT"} />
         <CompanyInfoCard symbol={"BINANCE:BTCUSDT"} />

@@ -7,14 +7,14 @@ const links = ["about", "contact"];
 
 const NavBar = (props: Props) => {
   return (
-    <nav className="sticky top-0 bg-white py-3">
+    <nav className=" bg-white py-3">
       {/* container and flex wrapper */}
-      <div className="w-[90%] mx-auto md:p-3 p-1  md:w-[85%] flex justify-between gap-[2rem] items-center">
+      <div className="w-full mx-auto md:p-3 py-3 px-2  md:w-[85%] flex justify-between gap-[2rem] items-center">
         {/* Logo */}
         <div>
           <Link
             href="/"
-            className="block font-body text-3xl font-bold md:tracking-widest"
+            className="block font-body md:text-3xl text-2xl font-bold md:tracking-widest"
           >
             Capital<span className="text-sky-500">Mine</span>
           </Link>
@@ -35,13 +35,13 @@ const NavBar = (props: Props) => {
         <div className="font-body space-x-4">
           <Link
             href="/auth/sign-in"
-            className="uppercase border font-semibold text-sky-700 border-sky-700 rounded px-6 py-2"
+            className="uppercase border text-sm  font-semibold text-sky-700 border-sky-700 px-3 py-2 rounded md:px-6 md:py-2"
           >
             Login
           </Link>
           <Link
             href="/auth/sign-up"
-            className="bg-sky-700 rounded text-white font-semibold px-6 py-2 uppercase"
+            className="bg-sky-700 text-sm  rounded text-white font-semibold md:px-6 md:py-2 px-3 py-2 uppercase"
           >
             Register
           </Link>

@@ -12,9 +12,9 @@ const ourCompany = [
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-neutral-800 p-3">
+    <footer className="bg-neutral-800">
       {/* container */}
-      <div className="p-4 w-[90%] mx-auto md:w-[85%]">
+      <div className="p-4 w-full mx-auto md:w-[85%]">
         {/* company Info and flex container */}
         <div className="my-8 flex flex-col md:flex-row gap-8 md:items-center justify-between">
           <div>

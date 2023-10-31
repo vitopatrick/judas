@@ -52,7 +52,7 @@ const CompanyInfoCard = ({ symbol }: Details) => {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={containerRef}>
+    <div className="tradingview-widget-container w-full" ref={containerRef}>
       <div className="tradingview-widget-container__widget"></div>
       <div className="tradingview-widget-copyright">
         <a

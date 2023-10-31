@@ -43,9 +43,9 @@ const Advantages = [
 
 const TradingAdvantages = (props: Props) => {
   return (
-    <section className="bg-sky-50/40 p-4 font-body">
+    <section className="bg-sky-50/40  font-body">
       {/* container */}
-      <div className="w-[90%] md:w-[80%] mx-auto p-5">
+      <div className="w-full md:w-[80%] mx-auto p-5">
         {/* header */}
         <h3 className="font-bold text-3xl text-center">
           Trading Advantages Of Us.
