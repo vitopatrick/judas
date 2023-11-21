@@ -20,7 +20,7 @@ const InvestmentPage = () => {
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               {plan.name}
             </h5>
-            <div className="f dark:text-white">
+            <div className="text-white">
               <span className="text-4xl font-num font-extrabold tracking-tight">
                 {plan.range}
               </span>
