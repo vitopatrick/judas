@@ -3,12 +3,12 @@ import React from "react";
 
 type Props = {};
 
-const images = [
-  "https://adrofx.com/sites/default/files/2020-12/art-of-trading-xs_0.jpg",
-  "https://adrofx.com/sites/default/files/2022-07/%D1%81opy-trading-thunmbnail_0.jpg",
-  "https://adrofx.com/sites/default/files/2020-12/deposit-bonus-xs_1.jpg",
-  "https://adrofx.com/sites/default/files/2020-12/markets-xs_0.jpg",
-];
+// const images = [
+//   "https://adrofx.com/sites/default/files/2020-12/art-of-trading-xs_0.jpg",
+//   "https://adrofx.com/sites/default/files/2022-07/%D1%81opy-trading-thunmbnail_0.jpg",
+//   "https://adrofx.com/sites/default/files/2020-12/deposit-bonus-xs_1.jpg",
+//   "https://adrofx.com/sites/default/files/2020-12/markets-xs_0.jpg",
+// ];
 
 const Hero = (props: Props) => {
   return (
@@ -31,17 +31,14 @@ const Hero = (props: Props) => {
             Create An Account
           </Link>
           {/* thumb Nails */}
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             {images.map((image) => (
               <img src={image} className="rounded-full w-[40px]" />
             ))}
-          </div>
+          </div> */}
         </div>
         {/* image */}
-        <img
-          src="https://adrofx.com/themes/custom/adrofx_theme/images/manged-portfolios.png"
-          alt=""
-        />
+        <img src="/manged-portfolios.png" alt="" />
       </div>
     </section>
   );

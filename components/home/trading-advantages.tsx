@@ -55,11 +55,11 @@ const TradingAdvantages = (props: Props) => {
           {Advantages.map((advantages) => (
             <div className="flex items-center gap-4 p-4 bg-white rounded">
               {/* image */}
-              <img
+              {/* <img
                 src={advantages.icon}
                 alt={advantages.title}
                 className="w-[50px]"
-              />
+              /> */}
               {/* write up */}
               <div className="space-y-2">
                 <h4 className="font-bold">{advantages.title}</h4>
