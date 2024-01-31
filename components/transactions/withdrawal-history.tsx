@@ -46,9 +46,7 @@ const WithdrawalTable = ({ withdrawals, loading }: withdrawal) => {
       {!loading && (
         <div className="mx-2">
           {/* grid wrapper container */}
-          <div className="grid grid-cols-4 md:grid-cols-5 gap-2 mt-4 bg-bg font-db  py-3 rounded px-2 justify-items-center">
-            {/* grid child */}
-            <div className="font-sec font-bold justify-self-start">Method</div>
+          <div className="grid grid-cols-4 md:grid-cols-4 gap-2 mt-4 bg-bg font-db  py-3 rounded px-2 justify-items-center">
             {/* grid child */}
             <div className="font-sec font-bold justify-self-start md:block hidden">
               Remarks
@@ -62,14 +60,11 @@ const WithdrawalTable = ({ withdrawals, loading }: withdrawal) => {
           </div>
           {/* withdrawal details */}
 
-          <div className="grid  grid-cols-4 md:grid-cols-5 font-db justify-items-center px-2 py-2 bg-bg/50 ">
+          <div className="grid  grid-cols-4 md:grid-cols-4 font-db justify-items-center px-2 py-2 bg-bg/50 ">
             {withdrawals.map((withdrawal: any) => (
               <>
                 {
                   <>
-                    <div className="p-1 justify-self-start font-bold capitalize font-sec">
-                      {withdrawal.coin}
-                    </div>
                     <div className="p-1 font-semibold font-sec justify-self-start hidden md:block">
                       {withdrawal.remarks ? withdrawal.remarks : "N/A"}
                     </div>
